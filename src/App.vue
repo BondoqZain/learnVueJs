@@ -7,7 +7,7 @@ import Instructors from './components/instructors.vue';
 import Vision from './components/Vision.vue';
 import Statistics from './components/Statistics.vue';
 import Mission from './components/Mission.vue';
-
+import StudentStories from './components/StudentStories.vue';
 </script>
 
 <template>
@@ -19,6 +19,7 @@ import Mission from './components/Mission.vue';
     <Vision />
     <Statistics />
     <Mission />
+    <StudentStories />
     <MainFooter />
   </div>
 </template>
