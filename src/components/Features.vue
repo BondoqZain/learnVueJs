@@ -57,7 +57,7 @@
         </div>
     </section>
 </template>
-<style>
+<style scoped>
 .features {
     background-color: var(--bg-dark);
     padding: 5% 0;

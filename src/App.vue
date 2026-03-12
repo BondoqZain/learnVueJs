@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';
 import Features from './components/Features.vue'; 
 import MainFooter from './components/MainFooter.vue';
+import Instructors from './components/instructors.vue';
 
 </script>
 
@@ -11,6 +12,7 @@ import MainFooter from './components/MainFooter.vue';
     <Navbar />
     <Hero />
     <Features />
+    <Instructors />
     <MainFooter />
   </div>
 </template>
