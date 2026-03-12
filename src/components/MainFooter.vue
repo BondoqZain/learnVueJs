@@ -1,39 +1,33 @@
 <script setup lang="ts">
 import FooterContent from './FooterContent.vue';
 import FooterCopyRights from './FooterCopyRights.vue';
-
 </script>
 
 <template>
-      <div class="container">
-        <FooterContent/>
-        <FooterCopyRights />
-      </div>
+  <footer>
+    <div class="container">
+      <FooterContent />
+      <FooterCopyRights />
+    </div>
+  </footer>
 </template>
 
 <style scoped>
 
-footer p {
-  font-family: Montserrat Alternates;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27.2px;
-  letter-spacing: -0.31px;
-  color: var(--white-muted);
-}
-
-footer a {
-  color: var(--white-muted);
-  gap: 2rem;
-}
 footer {
   justify-content: space-evenly;
   border-top: 1px solid var(--divider);
   padding-top: 30px;
+    background: linear-gradient(
+    0deg,
+    #0e1733 100%,
+    rgba(14, 23, 51, 0.4) 40%,
+    #0e1733 100%
+  );
 }
+
 footer .container {
   display: flex;
   flex-direction: column;
 }
-
 </style>

@@ -41,4 +41,9 @@
 .nav-list ul li:active {
     color: var(--accent);
 }
+@media screen and (max-width: 768px) {
+  .nav-list ul {
+    display: none;
+  }
+}
 </style>

@@ -23,6 +23,12 @@
 html,
 body {
   margin: 0;
+    background: linear-gradient(
+    0deg,
+    #0e1733 100%,
+    rgba(14, 23, 51, 0.4) 40%,
+    #0e1733 100%
+  );
 }
 
 .container {

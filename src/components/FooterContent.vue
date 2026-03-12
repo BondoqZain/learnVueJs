@@ -55,6 +55,20 @@
 </template>
 
 <style scoped>
+p {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  letter-spacing: -0.31px;
+  color: var(--white-muted);
+}
+
+a {
+  color: var(--white-muted);
+  gap: 2rem;
+}
+
 .upper-footer {
     display: flex;
     flex-wrap: wrap;

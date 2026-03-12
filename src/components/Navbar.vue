@@ -5,18 +5,21 @@ import NavList from './NavList.vue';
 </script>
 
 <template>
-    <div class="container">
-        <nav>
+    <nav>
+        <div class="container">
             <NavList />
             <Login />
-        </nav>
-    </div>  
+        </div>
+    </nav>
 </template>
 <style scoped>
 nav {
+    background-color: var(--white) !important;
+}
+
+nav .container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: var(--white);
 }
 </style>

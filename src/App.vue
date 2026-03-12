@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import Footer from './components/Footer.vue';
 import Navbar from './components/Navbar.vue';
+import MainFooter from './components/MainFooter.vue';
+import Hero from './components/Hero.vue';
 
 </script>
 
 <template>
-
-  <Navbar />
-  <Footer />
-
+  <div>
+    <Navbar />
+    <Hero />
+    <MainFooter />
+  </div>
 </template>
 
 <style scoped></style>
