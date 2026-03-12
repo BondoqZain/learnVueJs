@@ -8,6 +8,7 @@ import Vision from './components/Vision.vue';
 import Statistics from './components/Statistics.vue';
 import Mission from './components/Mission.vue';
 import StudentStories from './components/StudentStories.vue';
+import Faq from './components/Faq.vue';
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import StudentStories from './components/StudentStories.vue';
     <Statistics />
     <Mission />
     <StudentStories />
+    <Faq /> 
     <MainFooter />
   </div>
 </template>

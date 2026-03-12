@@ -131,6 +131,9 @@
     </section>
 </template>
 <style scoped>
+.student-stories{
+    margin-top: 150px;
+}
 .stories {
     color: var(--white);
     display: flex;
