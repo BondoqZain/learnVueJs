@@ -5,6 +5,7 @@ import Features from './components/Features.vue';
 import MainFooter from './components/MainFooter.vue';
 import Instructors from './components/instructors.vue';
 import Vision from './components/Vision.vue';
+import Statistics from './components/Statistics.vue';
 
 </script>
 
@@ -15,6 +16,7 @@ import Vision from './components/Vision.vue';
     <Features />
     <Instructors />
     <Vision />
+    <Statistics />
     <MainFooter />
   </div>
 </template>
