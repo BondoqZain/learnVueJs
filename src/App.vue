@@ -6,6 +6,7 @@ import MainFooter from './components/MainFooter.vue';
 import Instructors from './components/instructors.vue';
 import Vision from './components/Vision.vue';
 import Statistics from './components/Statistics.vue';
+import Mission from './components/Mission.vue';
 
 </script>
 
@@ -17,6 +18,7 @@ import Statistics from './components/Statistics.vue';
     <Instructors />
     <Vision />
     <Statistics />
+    <Mission />
     <MainFooter />
   </div>
 </template>
