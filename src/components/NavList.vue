@@ -1,3 +1,11 @@
+<!-- CODE REVIEW: NavList.vue (Junior Developer)
+  Vue Best Practices:
+  - Use router-link instead of <a href="#"> for SPA navigation - avoids full page reload
+  - href="#" causes page jump - use @click.prevent or router-link
+  - :active only styles on mousedown - consider :hover for better UX, or router-link-active for current route
+  - Good: Responsive design with media query hiding nav on mobile
+  - Consider adding a mobile menu toggle (hamburger) since nav hides at 768px - users lose navigation
+-->
 <template>
     <section class="nav-list">
         <img src="../assets/Logo.png" alt="logo" />

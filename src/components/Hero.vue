@@ -1,3 +1,10 @@
+<!-- CODE REVIEW: Hero.vue (Junior Developer)
+  Vue Best Practices:
+  - Navigation: Use <router-link> or @click with router.push() for Explore - enables SPA routing
+  - Assets: Prefer import img from '@/assets/...' or define in script - enables bundler optimization
+  - Good: Alt text on all images - required for accessibility (WCAG)
+  - Consider adding loading="lazy" on below-fold images for performance
+-->
 <template>
     <section class="hero">
         <div class="container">

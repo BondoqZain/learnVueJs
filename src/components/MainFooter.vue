@@ -1,3 +1,10 @@
+<!-- CODE REVIEW: MainFooter.vue (Junior Developer)
+  Vue Best Practices:
+  - Good: Composition - FooterContent + FooterCopyRights - clear separation of concerns
+  - Good: <script setup> with clean imports
+  - CSS bug: footer has justify-content but no display: flex - justify-content has no effect
+  - Semantic: <footer> is correct - screen readers identify as footer landmark
+-->
 <script setup lang="ts">
 import FooterContent from './FooterContent.vue';
 import FooterCopyRights from './FooterCopyRights.vue';

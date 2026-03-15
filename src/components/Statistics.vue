@@ -1,3 +1,11 @@
+<!-- CODE REVIEW: Statistics.vue (Junior Developer)
+  Vue Best Practices:
+  - Consider using v-for with a reactive array: const stats = [{ value: '500K+', label: 'Active Students' }, ...]
+  - Good: Simple, focused component
+  - Root element is <div> - consider <section> for semantic meaning (statistics block)
+  - Statistics could be props or fetched from API for dynamic content
+  - Consider adding key attribute when using v-for in future refactor
+-->
 <template>
     <div class="container">
         <section class="statistics">

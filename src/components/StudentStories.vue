@@ -1,3 +1,11 @@
+<!-- CODE REVIEW: StudentStories.vue (Junior Developer)
+  Vue Best Practices:
+  - Strong candidate for v-for: stories array with { quote, author, role, course, image, alt }
+  - Stars repeated 4x - use v-for or a StarRating component
+  - Consider <blockquote> for testimonial quotes (semantic HTML)
+  - Good: Scoped styles prevent leakage
+  - .author img has justify-items but img is not a grid child - use margin: 0 auto or flex on parent
+-->
 <template>
     <section class="student-stories">
         <div class="container">

@@ -1,3 +1,12 @@
+<!-- CODE REVIEW: App.vue (Junior Developer)
+  Vue Best Practices:
+  - Import casing: './instructors.vue' should match file name - use PascalCase (Instructors.vue) for consistency
+  - Good: <script setup> is the recommended Composition API style - no need for defineComponent
+  - Good: Clear component hierarchy - single responsibility per component
+  - Accessibility: Add <main> landmark wrapping content, or skip-to-content link for keyboard users
+  - Consider lazy-loading below-fold components: defineAsyncComponent for Vision, Statistics, Mission, etc.
+  - Empty <style scoped> can be removed - Vue allows omitting unused blocks
+-->
 <script setup lang="ts">
 import Navbar from './components/Navbar.vue';
 import Hero from './components/Hero.vue';

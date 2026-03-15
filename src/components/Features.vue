@@ -1,3 +1,13 @@
+<!-- CODE REVIEW: Features.vue (Junior Developer)
+  Vue Best Practices:
+  - DRY: Use v-for over array: const featuredClasses = [{ title, instructor, image, alt }, ...]
+  - Dead CSS: ".instructor-card h3" doesn't exist here - remove or this component uses .card only
+  - Images: Add object-fit: cover and explicit dimensions to prevent layout shift (CLS)
+  - UX: If cards are clickable, add cursor: pointer, hover state, and @click or router-link
+  - Good: Alt text on images
+  - Component design: Extract <FeatureCard> as reusable child - props: title, instructor, image
+  - Consider defineProps if converting to data-driven - makes component more maintainable
+-->
 <template>
     <section class="features">
         <div class="container">

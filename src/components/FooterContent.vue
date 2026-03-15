@@ -1,3 +1,9 @@
+<!-- CODE REVIEW: FooterContent.vue (Junior Developer)
+  Vue Best Practices:
+  - CSS: gap: 2rem on <a> has no effect - gap works on flex/grid containers; wrap in div with display: flex
+  - Good: ul/li for menu - correct list semantics
+  - Menu items (li) are not links - wrap in <a> or add @click if they should navigate
+-->
 <template>
     <div class="upper-footer">
         <div>
