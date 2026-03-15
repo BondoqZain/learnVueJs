@@ -1,3 +1,9 @@
+<!-- CODE REVIEW: Vision.vue (Junior Developer)
+  Vue Best Practices:
+  - Consider adding <script setup> for consistency - even empty components benefit from explicit setup
+  - Good: Semantic <section> usage
+  - DRY: .orange-big-text is duplicated in Hero.vue, Mission.vue - consider a shared CSS module or global utility class
+-->
 <template>
     <section class="vision">
         <div class="container">

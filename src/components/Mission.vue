@@ -1,3 +1,10 @@
+<!-- CODE REVIEW: Mission.vue (Junior Developer)
+  Vue Best Practices:
+  - Duplicate .mission h2 selector (lines 18 & 34) - merge into one rule to avoid redundancy
+  - Same .orange-big-text duplication as Vision.vue - extract to shared styles
+  - Good: Clear semantic structure
+  - Vision and Mission are very similar - consider a single VisionMission component with a prop
+-->
 <template>
     <section class="mission">
         <div class="container">

@@ -1,3 +1,11 @@
+<!-- CODE REVIEW: Faq.vue (Junior Developer)
+  Vue Best Practices:
+  - Good: Native <details>/<summary> - accessible, no JS, keyboard-friendly (Vue doesn't over-engineer)
+  - Bug: Each <details> has no content - add <p> or <div> inside for the answer text
+  - UX: Add [details[open] summary::after { transform: rotate(180deg) } for visual feedback
+  - DRY: Consider v-for over faqItems array: [{ question, answer }, ...]
+  - Good: Semantic structure - screen readers understand expandable sections
+-->
 <template>
     <section class="faq">
         <div class="faq-container">
@@ -6,6 +14,10 @@
 
             <details class="faq-item">
                 <summary>How do I access the courses?</summary>
+                <!-- Answer -->
+                <p>
+                    To access the courses, you need to create an account and purchase the course.
+                </p>
             </details>
 
             <details class="faq-item">

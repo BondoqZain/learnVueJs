@@ -1,3 +1,11 @@
+<!-- CODE REVIEW: Instructors.vue (Junior Developer)
+  Vue Best Practices:
+  - DRY: Use v-for with instructors array - const instructors = [{ name, role, image, alt }, ...]
+  - Dead CSS: .card styles exist but template uses .instructor-card only - remove .card rules
+  - Good: Consistent section-header pattern with Features
+  - Component design: Extract <InstructorCard> - reusable, testable, same as FeatureCard pattern
+  - When using v-for, add :key="instructor.id" or :key="instructor.name" for Vue's diff algorithm
+-->
 <template>
     <section class="instructors">
         <div class="container">

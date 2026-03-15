@@ -1,3 +1,11 @@
+<!-- CODE REVIEW: Login.vue (Junior Developer)
+  Vue Best Practices:
+  - Naming: Component does more than login (basket + login) - consider HeaderActions or NavActions
+  - Interactivity: Login button has no @click - add handler or wrap in router-link to /login
+  - Interactivity: Basket has no @click or href - users cannot access cart
+  - Use <button type="button"> explicitly - prevents accidental form submission in nested forms
+  - Good: CSS variables (var(--primary)) - excellent for theming and dark mode
+  -->
 <template>
     <section class="login">
         <div class="basket">
