@@ -1,3 +1,11 @@
+<script setup>
+import kimImg from '@/assets/Carousel_Kim_Kardashian.jpg.png'
+import joannaImg from '@/assets/Carousel_Joanna_Gaines_4.jpg.png'
+import jeffreyImg from '@/assets/Carousel_Jeffrey_Pfeffer_CM_NY.jpg.png'
+import ryanImg from '@/assets/Carousel_Ryan_Holiday.jpg.png'
+import ramitImg from '@/assets/Carousel_Ramit_Sethi.jpg.png'    
+
+</script>
 <template>
     <section class="hero">
         <div class="container">
@@ -16,14 +24,14 @@
             </section>
             <section class="images">
                 <div class="col1">
-                    <img src="../assets/Carousel_Kim_Kardashian.jpg.png" alt="kim kardashian" />
+                    <img :src="kimImg" alt="Kim Kardashian" loading="lazy"/>
 
-                    <img src="../assets/Carousel_Joanna_Gaines_4.jpg.png" alt="joanna gaines" />
+                    <img :src="joannaImg" alt="Joanna Gaines" />
                 </div>
                 <div class="col2">
-                    <img src="../assets/Carousel_Jeffrey_Pfeffer_CM_NY.jpg.png" alt="jeffrey pfeffer" />
-                    <img src="../assets/Carousel_Ryan_Holiday.jpg.png" alt="ryan holiday" />
-                    <img src="../assets/Carousel_Ramit_Sethi.jpg.png" alt="ramit sethi" />
+                    <img :src="jeffreyImg" alt="Jeffry Pfeffer" />
+                    <img :src="ryanImg" alt="Ryan Holidy" />
+                    <img :src="ramitImg" alt="Ramit Sethi" />
                 </div>
             </section>
         </div>
@@ -39,10 +47,13 @@
 
 .hero .container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
 }
+
 
 .orange-big-text {
     font-family: Montserrat Alternates;
@@ -54,14 +65,21 @@
     color: var(--accent);
 }
 
+.intro {
+    flex: 1;
+    min-width: 300px;
+}
+
 .intro .intro-artical {
     font-family: Montserrat Alternates;
     font-weight: 400;
     font-style: Regular;
     font-size: 24px;
-    line-height: 33.6px;
+    line-height: 30.6px;
     letter-spacing: 0.07px;
     color: var(--white);
+    max-width: 500px;
+
 }
 
 .intro .explore {
@@ -74,8 +92,13 @@
     font-family: Montserrat Alternates;
 }
 
+.explore:hover {
+    transform: translateY(-3px);
+}
+
 .images {
     display: flex;
+    justify-content: center;
 }
 
 .images img {
@@ -90,5 +113,40 @@
 .col2 {
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-artical {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .images {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col1,
+    .col2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .images img {
+        max-width: 140px;
+        height: 180px;
+    }
 }
 </style>
