@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
     <section class="vision">
         <div class="container">

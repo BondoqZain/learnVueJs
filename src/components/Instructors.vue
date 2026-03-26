@@ -1,3 +1,39 @@
+<script setup lang="ts">
+const instructors = [
+    {
+        name: 'Sarah Mitchell',
+        role: 'Digital Marketing Strategist',
+        image: new URL('../assets/Image (Sarah Mitchell) (1).png', import.meta.url).href,
+        alt: 'Sarah Mitchell'
+    },
+    {
+        name: 'James Rodriguez',
+        role: 'Business Leadership Coach',
+        image: new URL('../assets/Image (James Rodriguez).png', import.meta.url).href,
+        alt: 'James Rodriguez'
+    },
+    {
+        name: 'Elena Chen',
+        role: 'Financial Planning Expert',
+        image: new URL('../assets/Image (Elena Chen).png', import.meta.url).href,
+        alt: 'Elena Chen'
+    },
+    {
+        name: 'Marcus Johnson',
+        role: 'Fitness & Wellness Coach',
+        image: new URL('../assets/Image (Marcus Johnson).png', import.meta.url).href,
+        alt: 'Marcus Johnson'
+    },
+    {
+        name: 'Sophia Williams',
+        role: 'Creative Entrepreneur',
+        image: new URL('../assets/Image (Sophia Williams).png', import.meta.url).href,
+        alt: 'Sophia Williams'
+    }
+];
+</script>
+
+
 <template>
     <section class="instructors">
         <div class="container">
@@ -6,65 +42,17 @@
                 <p>Meet the experts who will guide your journey</p>
             </section>
             <section class="cards">
-                <div class="instructor-card">
+                <div class="instructor-card" v-for="instructor in instructors" :key="instructor.name">
                     <div>
-                        <img src="../assets/Image (Sarah Mitchell) (1).png" alt="Sarah Mitchell" />
+                        <img :src="instructor.image" :alt="instructor.alt" />
                     </div>
                     <div>
-                        <h3>Sarah Mitchell</h3>
-                        <p>Digital Marketing Strategist</p>
-                    </div>
-                </div>
-
-                <div class="instructor-card">
-                    <div>
-                        <img src="../assets/Image (James Rodriguez).png" alt="James Rodriguez" />
-                    </div>
-                    <div>
-                        <h3>James Rodriguez</h3>
-                        <p>Business Leadership Coach</p>
+                        <h3>{{ instructor.name }}</h3>
+                        <p>{{ instructor.role }}</p>
                     </div>
                 </div>
 
-                <div class="instructor-card">
-                    <div>
-                        <img src="../assets/Image (Elena Chen).png" alt="Elena Chen" />
-                    </div>
-                    <div>
-                        <h3>Elena Chen</h3>
-                        <p>Financial Planning Expert</p>
-                    </div>
-                </div>
-
-                <div class="instructor-card">
-                    <div>
-                        <img src="../assets/Image (Marcus Johnson).png" alt="Marcus Johnson" />
-                    </div>
-                    <div>
-                        <h3>Marcus Johnson</h3>
-                        <p>Fitness & Wellness Coach</p>
-                    </div>
-                </div>
-
-                <div class="instructor-card">
-                    <div>
-                        <img src="../assets/Image (Sophia Williams).png" alt="Sophia Williams" />
-                    </div>
-                    <div>
-                        <h3>Sophia Williams</h3>
-                        <p>Creative Entrepreneur</p>
-                    </div>
-                </div>
-
-                <div class="instructor-card">
-                    <div>
-                        <img src="../assets/Image (Marcus Johnson).png" alt="Marcus Johnson" />
-                    </div>
-                    <div>
-                        <h3>Marcus Johnson</h3>
-                        <p>Fitness & Wellness Coach</p>
-                    </div>
-                </div>
+                
             </section>
         </div>
     </section>
@@ -94,10 +82,6 @@
     flex-wrap: wrap;
 }
 
-.card {
-    margin: 10px;
-    flex: 1 1 250px;
-}
 
 .instructors .cards {
     justify-content: space-between;
@@ -119,7 +103,8 @@
 
 .instructor-card img {
     width: 100%;
-    overflow: hidden;
+    height: 250px;
+    object-fit: cover;
 }
 
 .instructor-card h3 {
@@ -127,4 +112,4 @@
     font-family: Montserrat Alternates;
     letter-spacing: 0.09px;
 }
-</style>
+</style>Í

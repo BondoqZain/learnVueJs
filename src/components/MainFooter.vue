@@ -15,6 +15,7 @@ import FooterCopyRights from './FooterCopyRights.vue';
 <style scoped>
 
 footer {
+  display: flex;
   justify-content: space-evenly;
   border-top: 1px solid var(--divider);
   padding-top: 30px;
@@ -24,6 +25,7 @@ footer {
     rgba(14, 23, 51, 0.4) 40%,
     #0e1733 100%
   );
+
 }
 
 footer .container {

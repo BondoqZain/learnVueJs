@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <section class="container">
         <section class="statistics">
             <div class="statistics-card">
                 <h1>500K+</h1>
@@ -16,7 +16,7 @@
                 <p>Classes</p>
             </div>
         </section>
-    </div>
+    </section>
 </template>
 
 <style scoped>

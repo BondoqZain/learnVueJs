@@ -2,6 +2,7 @@
     <div class="upper-footer">
         <div>
             <div><img src="../assets/Logo-light.png" alt="logo" /></div>
+
             <div>
                 <p>
                     Empowering individuals to unlock their full<br />
@@ -9,11 +10,12 @@
                     industry leaders.
                 </p>
             </div>
-            <div>
+
+            <div class="socials">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"> <i class="fa-brands fa-square-twitter"></i></a>
-                <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-                <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 
@@ -21,97 +23,121 @@
             <div>
                 <span>courses</span>
                 <ul>
-                    <li>brouse all</li>
-                    <li>business</li>
-                    <li>marketing</li>
-                    <li>technology</li>
-                    <li>leadership</li>
+                    <li><a href="#">browse all</a></li>
+                    <li><a href="#">business</a></li>
+                    <li><a href="#">marketing</a></li>
+                    <li><a href="#">technology</a></li>
+                    <li><a href="#">leadership</a></li>
                 </ul>
             </div>
 
             <div>
                 <span>company</span>
                 <ul>
-                    <li>about us</li>
-                    <li>instructors</li>
-                    <li>careers</li>
-                    <li>press</li>
-                    <li>blog</li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">instructors</a></li>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">press</a></li>
+                    <li><a href="#">blog</a></li>
                 </ul>
             </div>
 
             <div>
                 <span>support</span>
-                <ul>
-                    <li>help center</li>
-                    <li>contact</li>
-                    <li>terms</li>
-                    <li>privacy</li>
-                    <li>cookies</li>
+                <ul class="support-list">
+                    <li><a href="#">help center</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">terms</a></li>
+                    <li><a href="#">privacy</a></li>
+                    <li><a href="#">cookies</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </template>
-
 <style scoped>
+.upper-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--divider);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.upper-footer > div:first-child {
+    flex: 1 1 250px; 
+}
+
+.menu {
+    display: flex;
+    flex: 2 1 400px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.menu > div {
+    flex: 1 1 150px; 
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+span {
+    color: var(--white);
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    letter-spacing: -0.15px;
+    text-transform: capitalize;
+}
+.menu ul li a {
+    color: var(--white-muted);
+    text-decoration: none;
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    letter-spacing: -0.15px;
+    text-transform: capitalize;
+}
+
+.menu ul li a:hover {
+    color: var(--white);
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socials a {
+    color: var(--white-muted);
+    font-size: 18px;
+}
+
 p {
   font-family: Montserrat Alternates;
-  font-weight: 400;
   font-size: 16px;
   line-height: 27.2px;
   letter-spacing: -0.31px;
   color: var(--white-muted);
 }
 
-a {
-  color: var(--white-muted);
-  gap: 2rem;
-}
+@media (max-width: 768px) {
+    .upper-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.upper-footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-evenly;
-    border-bottom: 1px solid var(--divider);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-}
-
-.menu span {
-    font-family: Montserrat Alternates;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 1.95px;
-    text-transform: uppercase;
-    color: var(--white);
-}
-
-.menu ul {
-    padding: 0;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.menu ul li {
-    font-family: Montserrat Alternates;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.15px;
-    text-transform: capitalize;
-    list-style: none;
-    margin: 10px auto;
-    text-align: left;
-    color: var(--white-muted);
+    .menu {
+        width: 100%;
+        justify-content: flex-start;
+    }
 }
 </style>

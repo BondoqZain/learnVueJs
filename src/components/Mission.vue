@@ -22,6 +22,8 @@
     color: var(--white);
     letter-spacing: 0.4px;
     text-align: center;
+        margin-bottom: 0;
+
 }
 
 .mission h1 {
@@ -29,9 +31,6 @@
     text-align: center;
 }
 
-.mission h2 {
-    margin-bottom: 0;
-}
 
 .orange-big-text {
     font-family: Montserrat Alternates;

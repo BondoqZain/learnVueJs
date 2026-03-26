@@ -1,40 +1,55 @@
+<script setup lang="ts">
+
+const faqItems = [
+    {
+        question: "How do I access the courses?",
+        answer: "To access the courses, you need to create an account and purchase the course."
+    },
+    {
+        question: "What is your refund policy?",
+        answer: "We offer a 7-day money-back guarantee. If you're not satisfied with your course, you can request a full refund within 7 days of purchase, provided that less than 30% of the course has been completed."
+    },
+    {
+        question: "Do I get a certificate upon completion?",
+        answer: "Yes! Once you successfully complete a course, you will receive a digital certificate that you can download and share on your professional profiles."
+    },
+    {
+        question: "Can I access courses on mobile devices?",
+        answer: "Yes, our platform is fully responsive and can be accessed on any device with an internet connection, including smartphones and tablets."
+    },
+    {
+        question: "How long do I have access to a course?",
+        answer: "Once you purchase a course, you will have lifetime access to it. You can revisit the course materials and lectures whenever you want, even after completing the course."
+    },
+    {
+        question: "Are there any prerequisites for the courses?",
+        answer: "Each course may have its own prerequisites, which will be listed on the course page. Generally, we recommend having a basic understanding of programming concepts for our coding courses, but many courses are designed for beginners with no prior experience."
+    },
+    {
+        question: "Can I interact with the instructors?",
+        answer: "Yes, we encourage interaction between students and instructors. You can ask questions and participate in discussions through our platform's community forums or during live Q&A sessions if available."
+    },
+    {
+        question: "Do you offer corporate subscriptions?",
+        answer: "Yes, we offer corporate subscriptions that provide access to our entire course library for businesses and organizations. This allows companies to provide their employees with access to our courses for professional development and training purposes."
+
+    }
+];
+
+</script>
+
+
 <template>
     <section class="faq">
         <div class="faq-container">
             <h1>FAQ</h1>
             <p class="subtitle">Everything you need to know</p>
 
-            <details class="faq-item">
-                <summary>How do I access the courses?</summary>
+            <details v-for="faq in faqItems" class="faq-item">
+                <summary>{{ faq.question }}</summary>
+                <p>{{ faq.answer }}</p>
             </details>
 
-            <details class="faq-item">
-                <summary>What is your refund policy?</summary>
-            </details>
-
-            <details class="faq-item">
-                <summary>Do I get a certificate upon completion?</summary>
-            </details>
-
-            <details class="faq-item">
-                <summary>Can I access courses on mobile devices?</summary>
-            </details>
-
-            <details class="faq-item">
-                <summary>How long do I have access to a course?</summary>
-            </details>
-
-            <details class="faq-item">
-                <summary>Are there any prerequisites for the courses?</summary>
-            </details>
-
-            <details class="faq-item">
-                <summary>Can I interact with the instructors?</summary>
-            </details>
-
-            <details class="faq-item">
-                <summary>Do you offer corporate subscriptions?</summary>
-            </details>
         </div>
     </section>
 </template>
@@ -79,5 +94,9 @@ summary::after {
     position: absolute;
     right: 0;
     transition: 0.3s;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
 }
 </style>

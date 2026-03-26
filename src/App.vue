@@ -1,18 +1,20 @@
 <script setup lang="ts">
-import Navbar from './components/Navbar.vue';
-import Hero from './components/Hero.vue';
-import Features from './components/Features.vue'; 
-import MainFooter from './components/MainFooter.vue';
-import Instructors from './components/instructors.vue';
-import Vision from './components/Vision.vue';
-import Statistics from './components/Statistics.vue';
-import Mission from './components/Mission.vue';
-import StudentStories from './components/StudentStories.vue';
-import Faq from './components/Faq.vue';
+import { defineAsyncComponent } from 'vue';
+
+const Navbar=defineAsyncComponent(() => import('./components/Navbar.vue'));
+const Hero=defineAsyncComponent(() => import('./components/Hero.vue'));
+const Features=defineAsyncComponent(() => import('./components/Features.vue'));
+const Instructors=defineAsyncComponent(() => import('./components/Instructors.vue'));
+const Vision=defineAsyncComponent(() => import('./components/Vision.vue'));
+const Statistics=defineAsyncComponent(() => import('./components/Statistics.vue'));
+const Mission=defineAsyncComponent(() => import('./components/Mission.vue'));
+const StudentStories=defineAsyncComponent(() => import('./components/StudentStories.vue'));
+const Faq=defineAsyncComponent(() => import('./components/Faq.vue'));
+const MainFooter=defineAsyncComponent(() => import('./components/MainFooter.vue'));
 </script>
 
 <template>
-  <div>
+  <main>
     <Navbar />
     <Hero />
     <Features />
@@ -23,7 +25,6 @@ import Faq from './components/Faq.vue';
     <StudentStories />
     <Faq /> 
     <MainFooter />
-  </div>
+  </main>
 </template>
 
-<style scoped></style>
