@@ -1,40 +1,42 @@
 <script setup>
 import { ref } from 'vue'
 
+/* ✅ Import images (bundler optimization) */
+import jenniferImg from '@/assets/Image (Jennifer Martinez).png'
+
 const stories = ref([
   {
     quote: "The digital marketing course completely transformed how I approach my campaigns. Within 3 months, we saw a 250% increase in engagement. Sarah's teaching style is incredibly practical and results-driven.",
     author: 'Jennifer Martinez',
     role: 'Marketing Director',
     course: 'Digital Marketing Mastery',
-    image: '../assets/Image (Jennifer Martinez).png'
+    image: jenniferImg
   },
   {
     quote: "The coding bootcamp not only taught me essential programming languages but also the fundamentals of software development. My team completed our app project ahead of schedule, increasing our",
     author: 'David Kim',
     role: 'Software Engineer',
     course: 'Code Academy',
-    image: '../assets/Image (David Kim).png'
+    image: jenniferImg
   },
   {
     quote: "Participating in the UX design seminar enhanced my skills significantly. I implemented user feedback processes and improved our product's usability, resulting in a 40% rise in user satisfaction. The insights were game-changing!",
     author: 'Alice Chen',
     role: 'Product Manager',
     course: 'UX Design Institute',
-    image: '../assets/Image (Alice Chen).png'
+    image: jenniferImg
   },
   {
     quote: "This graphic design workshop opened my eyes to new creative techniques. I was able to redesign our branding in just a week, leading to a 60% boost in customer feedback. The hands-on approach was invaluable.",
     author: 'Michael Thompson',
     role: 'Creative Lead',
     course: 'Visual Arts Academy',
-    image: '../assets/Image (Michael Thompson).png'
+    image: jenniferImg
   }
 ])
 
-const stars = ref([1,2,3,4,5])
+const stars = ref([1, 2, 3, 4, 5])
 </script>
-
 <template>
   <section class="student-stories">
     <div class="container">
