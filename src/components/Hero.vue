@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import kimImg from '@/assets/Carousel_Kim_Kardashian.jpg.png'
 import joannaImg from '@/assets/Carousel_Joanna_Gaines_4.jpg.png'
 import jeffreyImg from '@/assets/Carousel_Jeffrey_Pfeffer_CM_NY.jpg.png'

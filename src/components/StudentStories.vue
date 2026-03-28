@@ -1,7 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
 
-/* ✅ Import images (bundler optimization) */
 import jenniferImg from '@/assets/Image (Jennifer Martinez).png'
 
 const stories = ref([
