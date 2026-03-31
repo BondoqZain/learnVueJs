@@ -76,21 +76,18 @@ const instructors = [
     color: var(--white);
 }
 
-.cards {
+
+
+
+.instructors .cards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-
-.instructors .cards {
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .instructor-card {
     margin: 10px;
-    flex: 1 1 200px;
+    flex: 0 0 250px;
 }
 
 .instructor-card p {

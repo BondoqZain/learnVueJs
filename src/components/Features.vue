@@ -98,7 +98,7 @@ const handleClick = (item: any) => {
 
 .card {
     margin: 10px;
-    flex: 1 1 250px;
+    flex: 0 0 250px;
     color: var(--white);
     font-family: Montserrat Alternates;
     cursor: pointer;

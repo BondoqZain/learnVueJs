@@ -101,7 +101,7 @@ const stars = ref([1, 2, 3, 4, 5])
   border: 1px solid var(--border);
   border-radius: 15px;
   padding: 30px;
-  flex: 1 1 250px;
+  flex: 0 0 250px;
   font-family: Montserrat Alternates;
 }
 
